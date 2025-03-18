@@ -15,4 +15,4 @@ filetype indent on
 syntax on
 
 " Turn line numbers.
-number on
+set number

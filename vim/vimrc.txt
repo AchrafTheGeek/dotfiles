@@ -16,3 +16,9 @@ syntax on
 
 " Turn line numbers.
 set number
+
+" Turn on relative line numbers.
+set relativenumber
+
+" Treat all numerals as decimal
+set nrformats

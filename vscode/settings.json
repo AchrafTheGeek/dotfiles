@@ -1,9 +1,11 @@
 {
-    "explorer.confirmDragAndDrop": false,
-    "symbols.hidesExplorerArrows": false,
-    "workbench.iconTheme": "simple-icons",
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.tabCompletion": "on"
+"explorer.confirmDragAndDrop": false,
+"symbols.hidesExplorerArrows": false,
+"workbench.iconTheme": "simple-icons",
+"terminal.integrated.defaultProfile.linux": "bash",
+"editor.acceptSuggestionOnEnter": "off",
+"editor.acceptSuggestionOnCommitCharacter": false,
+"editor.tabCompletion": "on",
+"editor.parameterHints.enabled": false,
+    
 }

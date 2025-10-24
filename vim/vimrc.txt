@@ -21,4 +21,7 @@ set number
 set relativenumber
 
 " Treat all numerals as decimal
-set nrformats
+" set nrformats
+
+" Compile and run C file with F9
+nnoremap <F9> :w<CR>:!gcc % -o %< && ./%<<CR>

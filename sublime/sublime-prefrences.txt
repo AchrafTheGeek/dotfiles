@@ -1,0 +1,8 @@
+{
+	"font_size": 12,
+	"ignored_packages": [],
+	"auto_complete_commit_on_tab": true,
+	"auto_complete": true,
+	"auto_complete_commit_on_enter": false,
+}
+

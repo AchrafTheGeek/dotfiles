@@ -1,0 +1,46 @@
+That is a classic headache. If your terminal recognizes the change but VS Code is being stubborn, it’s usually because VS Code is looking at the **physical scan codes** of your keyboard rather than the **virtual symbols** `xmodmap` is providing.
+
+Here are the two ways to fix this, depending on how "deep" you want the fix to go.
+
+### 1. The "VS Code Only" Fix
+
+VS Code has a specific setting for how it handles keyboard dispatching. By default, it tries to be "smart" and bypasses some mapping layers. You can force it to listen to the mapped symbols:
+
+1. Open VS Code **Settings** (`Ctrl + ,`).
+2. Search for **"Keyboard Dispatch"**.
+3. Change the setting `Keyboard: Dispatch` from `code` to **`keyCode`**.
+4. Restart VS Code.
+
+---
+
+### 2. The "Better Way" (XKB Options)
+
+Since you are on X11, `xmodmap` is actually considered a bit "legacy" and can be flaky with modern hardware-accelerated apps like VS Code (which is built on Electron).
+
+The modern way to do this is using **XKB options**, which operate at a lower level that VS Code can't ignore. You can achieve your exact "Caps = Esc, Shift+Caps = Caps" goal with a single command:
+
+```bash
+setxkbmap -option "caps:escape_shifted_capslock"
+
+```
+
+**Why this is usually better:**
+
+* It’s instantaneous.
+* It is recognized natively by Electron/VS Code.
+* It handles the modifier logic (Shift+Caps) automatically without manual keycode scripts.
+
+> [!TIP]
+> **To make the `setxkbmap` command permanent:**
+> If you like how this works better than the xmodmap version, you can add that one-liner to your `.bashrc` or your Desktop Environment's "Startup Applications" list.
+
+---
+
+### How to test if it's working
+
+Once you've tried one of the above, open the **VS Code Keyboard Shortcuts** editor (`Ctrl + K`, then `Ctrl + S`). Click the little keyboard icon in the top right ("Record Keys") and press your Caps Lock key.
+
+* If it shows **"Escape"**, you're golden.
+* If it still shows **"Caps Lock"**, VS Code is still reading the raw hardware event.
+
+Would you like me to help you write a small shell script that ensures these settings apply every time you plug in your keyboard or wake your laptop?

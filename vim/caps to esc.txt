@@ -1,0 +1,9 @@
+1-sudo vim /etc/default/keyboard
+2-add : XKBOPTIONS="caps:escape_shifted_capslock"
+(If there are already options there, just add a comma: XKBOPTIONS="previous_option,caps:escape_shifted_capslock" gold)
+3-apply it : sudo udevadm trigger --subsystem-match=input --action=change
+
+
+
+
+COMMAND: setxkbmap -option "caps:escape_shifted_capslock"

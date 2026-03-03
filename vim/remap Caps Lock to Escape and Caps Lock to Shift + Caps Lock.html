@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class=" nbfkstc idc0_350"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>[SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock / Newbie Corner / Arch Linux Forums</title>
+<link rel="stylesheet" type="text/css" href="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/ArchLinux.css">
+<link rel="canonical" href="https://bbs.archlinux.org/viewtopic.php?id=248433" title="Page 1">
+<link rel="alternate" type="application/atom+xml" href="https://bbs.archlinux.org/extern.php?action=feed&amp;tid=248433&amp;type=atom" title="Atom topic feed">
+    <link rel="stylesheet" media="screen" href="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/arch.css">
+        <link rel="stylesheet" media="screen" href="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/archnavbar.css">
+    
+<link rel="shortcut icon" href="https://bbs.archlinux.org/style/ArchLinux/favicon.ico">
+<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style><script type="text/javascript" src="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/fixHeadlessAudio.js"></script></head>
+
+<body>
+<div id="archnavbar" class="anb-forum">
+	<div id="archnavbarlogo"><h1><a href="http://archlinux.org/">Arch Linux</a></h1></div>
+	<div id="archnavbarmenu">
+		<ul id="archnavbarlist">
+			<li id="anb-home"><a href="http://archlinux.org/">Home</a></li><li id="anb-packages"><a href="http://archlinux.org/packages/">Packages</a></li><li id="anb-forums" class="anb-selected"><a href="https://bbs.archlinux.org/">Forums</a></li><li id="anb-wiki"><a href="https://wiki.archlinux.org/">Wiki</a></li><li id="anb-gitlab"><a href="https://gitlab.archlinux.org/archlinux">GitLab</a></li><li id="anb-security"><a href="https://security.archlinux.org/">Security</a></li><li id="anb-aur"><a href="https://aur.archlinux.org/">AUR</a></li><li id="anb-download"><a href="http://archlinux.org/download/">Download</a></li>		</ul>
+	</div>
+</div>
+
+
+<div id="punviewtopic" class="pun">
+<div class="top-box"></div>
+<div class="punwrap">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex" class="isactive"><a href="https://bbs.archlinux.org/index.php">Index</a></li>
+				<li id="navrules"><a href="https://bbs.archlinux.org/misc.php?action=rules">Rules</a></li>
+				<li id="navsearch"><a href="https://bbs.archlinux.org/search.php">Search</a></li>
+				<li id="navregister"><a href="https://bbs.archlinux.org/register.php">Register</a></li>
+				<li id="navlogin"><a href="https://bbs.archlinux.org/login.php">Login</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p class="conl">You are not logged in.</p>
+			<ul class="conr">
+				<li><span>Topics: <a href="https://bbs.archlinux.org/search.php?action=show_recent" title="Find topics with recent posts.">Active</a> | <a href="https://bbs.archlinux.org/search.php?action=show_unanswered" title="Find topics with no replies.">Unanswered</a></span></li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="brdmain">
+<div class="linkst">
+	<div class="inbox crumbsplus">
+		<ul class="crumbs">
+			<li><a href="https://bbs.archlinux.org/index.php">Index</a></li>
+			<li><span>»&nbsp;</span><a href="https://bbs.archlinux.org/viewforum.php?id=23">Newbie Corner</a></li>
+			<li><span>»&nbsp;</span><strong><a href="https://bbs.archlinux.org/viewtopic.php?id=248433">[SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock</a></strong></li>
+		</ul>
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages: </span><strong class="item1">1</strong></p>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p1858653" class="blockpost rowodd firstpost blockpost1">
+	<h2><span><span class="conr">#1</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1858653#p1858653">2019-08-14 16:20:38</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Fabius</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/121907.jpg" width="80" height="80" alt=""></dd>
+						<dd><span>Registered: 2019-05-21</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>[SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock</h3>
+					<div class="postmsg">
+						<p>I'm experiencing a strange behavior with <strong>xmodmap</strong>. I want to remap <em>Caps_Lock</em> so it acts as <em>Escape</em> and <em>Shift+Caps_Lock</em> so it acts as <em>Caps_Lock</em>. In my <strong>~/.Xmodmap</strong> i tried every possible combination of the following commands always with the same result:</p><div class="codebox"><pre><code>clear Lock
+remove Lock = Caps_Lock
+keycode 66 =
+keycode 66 = Escape Caps_Lock
+keysym Caps_Lock = Escape Caps_Lock</code></pre></div><p>The <em>Caps_Lock</em> gets properly remapped to <em>Escape</em></p><div class="codebox"><pre><code>$ xmodmap -pke | grep Caps
+keycode  66 = Escape Caps_Lock Escape Caps_Lock</code></pre></div><p><strong>BUT</strong> after reboot it still does lock CAPS. So it acts as both <em>Escape</em> and <em>Caps_Lock</em>.</p><p>Running <strong>xev</strong> i can see that the <em>state</em> switches between <em>0x10</em> and <em>0x12</em>. While <em>Shift+Caps_Lock</em> works as expected (as <em>Caps_Lock</em>).</p><p>If i run <strong>xmodmap ~/.Xmodmap</strong> in my terminal after logging in i get this as before:</p><div class="codebox"><pre><code>$ xmodmap -pke | grep Caps
+keycode  66 = Escape Caps_Lock Escape Caps_Lock</code></pre></div><p><strong>BUT</strong> <em>Caps_Lock</em> starts behaving as expected, only as <em>Escape</em> and does no longer lock CAPS.</p><p>I really dont get what am i doing wrong. Anyone can help me figure it out?</p>
+						<p class="postedit"><em>Last edited by Fabius (2019-08-16 00:23:31)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1858669" class="blockpost roweven">
+	<h2><span><span class="conr">#2</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1858669#p1858669">2019-08-14 18:00:01</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Fabius</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/121907.jpg" width="80" height="80" alt=""></dd>
+						<dd><span>Registered: 2019-05-21</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock</h3>
+					<div class="postmsg">
+						<p>As soon as i posted i figured out that <strong>X keyboard extension</strong> yet offers an option for this.<br>By looking at <strong>/usr/share/X11/xkb/rules/base.lst</strong> i found the following line:</p><div class="codebox"><pre><code>caps:escape_shifted_capslock Make unmodified Caps Lock an additional Esc, but Shift + Caps Lock behaves like regular Caps Lock</code></pre></div><p>So i simply needed to add <strong>caps:escape_shifted_capslock</strong> to <strong>XkbOptions</strong> inside <strong>/etc/X11/xorg.conf.d/00-keyboard.conf</strong> this way:</p><div class="codebox"><pre><code>Option "XkbOptions" "terminate:ctrl_alt_bksp,caps:escape_shifted_capslock"</code></pre></div><p>After reboot <em>Caps_Lock</em> and <em>Shift+Caps_Lock</em> were behaving exactly the way i wanted.</p>
+						<p class="postedit"><em>Last edited by Fabius (2019-08-14 18:06:10)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1858694" class="blockpost rowodd">
+	<h2><span><span class="conr">#3</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1858694#p1858694">2019-08-14 20:40:21</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>seth</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/63451.png" width="80" height="80" alt=""></dd>
+						<dd><span>From: Don't DM me only for attention</span></dd>
+						<dd><span>Registered: 2012-09-03</span></dd>
+						<dd><span>Posts: 73,337</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock</h3>
+					<div class="postmsg">
+						<p>Please always remember to mark resolved threads by editing your
+ initial posts subject - so others will know that there's no task left, 
+but maybe a solution to find.<br>Thanks.</p>
+					</div>
+					<div class="postsignature postmsg"><hr><p><a href="http://wiki.archlinux.org/title/List_of_applications/Internet#Without_a_dedicated_client" rel="nofollow">How to upload text</a> · <a href="http://wiki.archlinux.org/title/Systemd#Change_default_target_to_boot_into" rel="nofollow">How to boot w/o GUI</a> · <a href="http://wiki.archlinux.org/title/Dual_boot_with_Windows#Fast_Startup_and_hibernation" rel="nofollow">Disable Windows Fast-Start!</a> · <a href="http://wiki.archlinux.org/title/Xinit#xinitrc" rel="nofollow">Fix your xinitrc</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1858838" class="blockpost roweven">
+	<h2><span><span class="conr">#4</span> <a href="https://bbs.archlinux.org/viewtopic.php?pid=1858838#p1858838">2019-08-16 00:24:04</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Fabius</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="remap%20Caps%20Lock%20to%20Escape%20and%20Caps%20Lock%20to%20Shift%20+%20Caps%20Lock_files/121907.jpg" width="80" height="80" alt=""></dd>
+						<dd><span>Registered: 2019-05-21</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>seth wrote:</cite><blockquote><div><p>Please
+ always remember to mark resolved threads by editing your initial posts 
+subject - so others will know that there's no task left, but maybe a 
+solution to find.<br>Thanks.</p></div></blockquote></div><p>Sure, done. Thanks for the advice.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox crumbsplus">
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages: </span><strong class="item1">1</strong></p>
+		</div>
+		<ul class="crumbs">
+			<li><a href="https://bbs.archlinux.org/index.php">Index</a></li>
+			<li><span>»&nbsp;</span><a href="https://bbs.archlinux.org/viewforum.php?id=23">Newbie Corner</a></li>
+			<li><span>»&nbsp;</span><strong><a href="https://bbs.archlinux.org/viewtopic.php?id=248433">[SOLVED] xmodmap - remap Caps_Lock to Esc and S+Caps_Lock to Caps_Lock</a></strong></li>
+		</ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div id="brdfooternav" class="inbox">
+			<div class="conl">
+				<form id="qjump" method="get" action="viewforum.php">
+					<div><label><span>Jump to<br></span>
+					<select name="id" onchange="window.location=('viewforum.php?id='+this.options[this.selectedIndex].value)">
+						<optgroup label="Technical Issues and Assistance">
+							<option value="23" selected="selected">Newbie Corner</option>
+							<option value="17">Installation</option>
+							<option value="22">Kernel &amp; Hardware</option>
+							<option value="18">Applications &amp; Desktop Environments</option>
+							<option value="31">Laptop Issues</option>
+							<option value="8">Networking, Server, and Protection</option>
+							<option value="32">Multimedia and Games</option>
+							<option value="51">Arch Linux Guided Installer</option>
+							<option value="50">System Administration</option>
+							<option value="35">Other Architectures</option>
+						</optgroup>
+						<optgroup label="Arch-centric">
+							<option value="24">Announcements, Package &amp; Security Advisories</option>
+							<option value="1">Arch Discussion</option>
+							<option value="13">Forum &amp; Wiki discussion</option>
+						</optgroup>
+						<optgroup label="Pacman Upgrades, Packaging &amp; AUR">
+							<option value="44">Pacman &amp; Package Upgrade Issues</option>
+							<option value="49">[testing] Repo Forum</option>
+							<option value="4">Creating &amp; Modifying Packages</option>
+							<option value="38">AUR Issues, Discussion &amp; PKGBUILD Requests</option>
+						</optgroup>
+						<optgroup label="Contributions &amp; Discussion">
+							<option value="20">GNU/Linux Discussion</option>
+							<option value="27">Community Contributions</option>
+							<option value="33">Programming &amp; Scripting</option>
+							<option value="30">Other Languages</option>
+							<option value="47">Artwork and Screenshots</option>
+						</optgroup>
+					</select></label>
+					<input type="submit" value=" Go " accesskey="g">
+					</div>
+				</form>
+			</div>
+			<div class="conr">
+				<p id="feedlinks"><span class="atom"><a href="https://bbs.archlinux.org/extern.php?action=feed&amp;tid=248433&amp;type=atom">Atom topic feed</a></span></p>
+				<p id="poweredby">Powered by <a href="http://fluxbb.org/">FluxBB</a></p>
+			</div>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+<div class="end-box"></div>
+</div>
+
+
+
+</body></html>

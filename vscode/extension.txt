@@ -1,0 +1,16 @@
+batisteo.vscode-django
+damiankoper.gdb-debug
+dart-code.dart-code
+dart-code.flutter
+esbenp.prettier-vscode
+helgardrichard.helium-icon-theme
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode.cpptools
+ms-vscode.remote-explorer
+ms-vscode.vscode-typescript-next
+vscodevim.vim

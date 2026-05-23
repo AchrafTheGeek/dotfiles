@@ -1,0 +1,1 @@
+change keyboard dispatcher in setting form code to keyCode, this will make vscode recognize caps locks as esc

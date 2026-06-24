@@ -1,15 +1,46 @@
--- 1. Basic Editing
-vim.g.do_filetype_lua = 1	   	-- Lua file type detection
-vim.cmd('filetype plugin indent on')	-- Auto file type indentation
-vim.opt.nrformats = ''		   	-- Treat all numerals as decimal
-vim.opt.number = true              	-- Show line numbers
-vim.opt.relativenumber = true      	-- Relative numbers for easier navigation
---vim.opt.autoindent = true 	   	-- Auto indent
---vim.opt.mouse = "a"                	-- Enable mouse
---vim.opt.cursorline = true           	-- Highlight current line
-vim.opt.showmatch = true            	-- Show matching brackets
+vim.opt.number = true         -- Turn on line numbers
+vim.opt.relativenumber = true -- Turn on relative line numbers
 
+vim.keymap.set("n", "<F9>", function ()
+	vim.cmd("write")
 
--- Map F9 to compile and run current C file
-vim.keymap.set('n', '<F9>', ':w<CR>:!gcc % -o %< && ./%<<CR>', { noremap = true, silent = false })
+	local file = vim.fn.expand("%:p")
+	local name = vim.fn.expand("%:t:r")
+	local ext = vim.fn.expand("%:e")
+	local dir = vim.fn.expand("%:p:h")
+
+	local cmd = ""
+
+	if ext == "c" then
+		cmd = string.format(
+			"gcc -Wall -Wextra -Werror -Wshadow -std=c11 -g '%s' -o '%s/%s' && '%s/%s'",
+			file, dir, name, dir, name
+		)
+	elseif ext == "cpp" then
+		cmd = string.format(
+			"g++ -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror -pedantic -O2 -g '%s' -o '%s/%s' && '%s/%s'",
+			file, dir, name, dir, name
+		)
+	elseif ext == "rs" then
+		cmd = string.format(
+			"rustc '%s' -o '%s/%s' && '%s/%s'",
+			file, dir, name, dir, name
+		)
+	elseif ext == "py" then
+		cmd = string.format(
+			"python3 '%s'",
+			file
+		)
+	elseif ext == "js" then
+		cmd = string.format(
+			"node '%s'",
+			file
+		)
+	else
+		vim.notify("Unsupported filetype: " .. ext, vim.log.levels.WARN)
+		return
+	end
+
+	vim.cmd("split | terminal " .. cmd)
+end, { desc = "Build & run current file"})
 
